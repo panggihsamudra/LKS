@@ -13,12 +13,30 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$(".tautan").click(function(){
+				$('.widget h2.bb').css({
+					'background-color':'#55c768'					
+				});
+				$('.widget h2.bb').find('a').attr('style','color:#fff');
+				$('.widget h2.aa').css({
+					'background-color':'#fff'					
+				});
+				$('.widget h2.aa').find('a').attr('style','color:#55c768 !important');
 				$(".layanan1").hide();
 				$(".tautan1").show();
 			});
 			$(".layanan").click(function(){
+				$('.widget h2.aa').css({
+					'background-color':'#55c768'					
+				});
+				$('.widget h2.aa').find('a').attr('style','color:#fff');
+				$('.widget h2.bb').css({
+					'background-color':'#fff'					
+				});
+				$('.widget h2.bb').find('a').attr('style','color:#55c768 !important');
+				
 				$(".layanan1").show();
 				$(".tautan1").hide();
+
 			});
 		});
 	</script>
