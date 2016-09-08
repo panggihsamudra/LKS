@@ -1,6 +1,5 @@
 <?php $halaman = "home" ?>
 <?php 
-
 	$db = new DB;
 
 	$banyakData = $db->show("SELECT count(id) FROM artikel")[0];
@@ -123,9 +122,10 @@
 			<div class="right">
 				<div class="inright">
 					<div id="link" class="widget">
+						<!--
 						<ul class="tab">
-							<li><h2 class="bb"><a href="#update" class="tautan">TAUTAN</a></h2></li>
-							<li><h2 class="aa"><a href="#update" class="layanan">LAYANAN</a></h2></li>
+							<li ><h2 class="bb"><a href="#update" class="tautan">TAUTAN</a></h2></li>
+							<li ><h2 class="aa"><a href="#update" class="layanan">LAYANAN</a></h2></li>
 						</ul>
 						<div class="isi">
 							<div class="tautan1">
@@ -142,7 +142,8 @@
 									<li><a href="#">Beasiswa Luar Negeri</a></li>
 								</ul>
 							</div>
-						</div>
+						</div>-->
+						<?php include 'include/tabs.php';?>
 					</div>
 					<div class="widget">
 						<h2>WISATA POPULER</h2>

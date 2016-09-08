@@ -9,9 +9,11 @@
 	<meta name="description" content="Flashcloud is cloud services" />
 	<meta name="author" content="Afnizar Hilmi Nur Ghifari" />
 	<link rel="stylesheet" type="text/css" href="<?php echo TEMP_DIR; ?>/css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo TEMP_DIR; ?>/css/tabs.css">
 	<script type="text/javascript" src="<?php echo TEMP_DIR; ?>/js/jquery-2.0.1.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
+			/*
 			$(".tautan").click(function(){
 				$('.widget h2.bb').css({
 					'background-color':'#55c768'					
@@ -37,7 +39,15 @@
 				$(".layanan1").show();
 				$(".tautan1").hide();
 
+			});*/
+			$(document).on('click','ul.tabs li',function(){
+				var tab_id = $(this).attr('data-tab');
+				$('ul.tabs li').removeClass('current');
+				$('.tab-content').removeClass('current');
+				$(this).addClass('current');
+				$("#"+tab_id).addClass('current');
 			});
+
 		});
 	</script>
 </head>

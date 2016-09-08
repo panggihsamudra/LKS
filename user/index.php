@@ -1,5 +1,4 @@
-<?php 
-
+<?php
 require_once '../core/config.php';
 
 $load = new Load();
